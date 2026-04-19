@@ -5,13 +5,13 @@ metadata:
   namespace: roboshop
   labels:
     project: roboshop
-    tier: database
+    tier: db
     component: mongodb
 spec:
   clusterIP: None
   selector:
     project: roboshop
-    tier: database
+    tier: db
     component: mongodb
   ports:
   - protocol: TCP
@@ -39,7 +39,7 @@ spec:
     metadata:
       labels:
         project: roboshop
-        tier: database
+        tier: db
         component: mongodb
     spec:
       containers:
