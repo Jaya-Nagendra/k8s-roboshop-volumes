@@ -45,7 +45,7 @@ spec:
       containers:
       - name: mongodb
         image: nagendra2244/mongodb:1.2.0
-        volumeMount:
+        volumeMounts:
         - name: mongodb
           mountPath: /data/db
  # PVC
